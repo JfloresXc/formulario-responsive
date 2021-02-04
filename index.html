@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <form class="form" id="form">
+            <!-- Group User -->
+            <div class="form__group form__group-user">
+                <label class="form__group-title" for="user">Usuario</label>
+                <div class="form__group-input">
+                    <input type="text" class="form__input" id="user" name="user" placeholder="john_wick">
+                    <span class="material-icons form__icon"></span>
+                </div>
+                <p class="form__message-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros,
+                    letras y guion bajo.</p>
+            </div>
+
+            <!-- Group Name -->
+            <div class="form__group form__group-name">
+                <label class="form__group-title" for="name">Nombre</label>
+                <div class="form__group-input">
+                    <input type="text" class="form__input" id="name" name="name" placeholder="John Wick">
+                    <span class="material-icons form__icon"></span>
+                </div>
+                <p class="form__message-error">El nombre solo puede contener letras y espacios</p>
+            </div>
+
+            <!-- Group Password -->
+            <div class="form__group form__group-password">
+                <label class="form__group-title" for="password">Contraseña</label>
+                <div class="form__group-input">
+                    <input type="password" class="form__input" id="password" name="password" placeholder="">
+                    <span class="material-icons form__icon"></span>
+                </div>
+                <p class="form__message-error">La contraseña debe ser de 4 a 12 dígitos.</p>
+            </div>
+
+            <!-- Group Password2 -->
+            <div class="form__group form__group-password2">
+                <label class="form__group-title" for="password2">Vuelve a ingresar la contraseña</label>
+                <div class="form__group-input">
+                    <input type="password" class="form__input" id="password2" name="password2" placeholder="">
+                    <span class="material-icons form__icon"></span>
+                </div>
+                <p class="form__message-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+
+            <!-- Group Email-->
+            <div class="form__group form__group-email">
+                <label class="form__group-title" for="email">Correo Electrónico</label>
+                <div class="form__group-input">
+                    <input type="text" class="form__input" id="email" name="email" placeholder="jhon_wick@correo.com">
+                    <span class="material-icons form__icon"></span>
+                </div>
+                <p class="form__message-error">El correo solo puede contener letras, números, puntos, guiones, guiones bajos.</p>
+            </div>
+
+            <!-- Group Teléfono -->
+            <div class="form__group form__group-cellphone">
+                <label class="form__group-title" for="cellphone">Teléfono</label>
+                <div class="form__group-input">
+                    <input type="text" class="form__input" id="cellphone" name="cellphone" placeholder="961750240">
+                    <span class="material-icons form__icon"></span>
+                </div>
+                <p class="form__message-error">El teléfono solo puede contener números y el máximo son 14 dígitos.</p>
+            </div>
+
+            <!-- Group terminos -->
+            <div class="form__group-terms">
+                <input type="checkbox" id="terms" name="terms">
+                <label class="form__group-title" for="terms">Acepto términos y condiciones</label>
+            </div>
+
+            <div class="form__message-error-submit">
+                <span class="material-icons">warning</span>
+                <p><strong>Error:</strong> Por favor rellenar el formulario correctamente</p>
+            </div>
+
+            <div class="form__group-button-submit">
+                <button type="submit" class="form__button-submit">Enviar</button>
+                <div class="form__message-submit">Enviado satisfactoriamente</div>
+            </div>
+        </form>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
